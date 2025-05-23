@@ -1,7 +1,4 @@
 def call() {
-	stage('checkout'){
-		checkout scm
-	}
 	stage('build') {
 		echo 'building'
 		sh 'mvn clean install'
